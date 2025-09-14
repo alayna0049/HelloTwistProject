@@ -4,6 +4,10 @@ public class HelloTwist
 {
     public static void Main(string[] args)
     {
+        //added a greeting message
+        Console.WriteLine("Hi there! /ᐠ. .ᐟ\ฅ");
+        Console.WriteLine();
+        
         Console.WriteLine("What is your name?");
         string name = Console.ReadLine();
 
@@ -21,5 +25,6 @@ public class HelloTwist
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~");
     }
 }
+
 
 
