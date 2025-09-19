@@ -7,24 +7,43 @@ public class HelloTwist
         //added a greeting message
         Console.WriteLine("Hi there! /ᐠ. .ᐟ\ฅ");
         Console.WriteLine();
-        
-        Console.WriteLine("What is your name?");
-        string name = Console.ReadLine();
 
+        //ask for name again if input is blank
+        string name = "";
+        while (string.IsNullOrWhiteSpace(name))
+     {
+        Console.WriteLine("What is your name?");
+        name = Console.ReadLine();
+        if (string.IsNullOrWhiteSpace(name))
+        {
+            Console.Writeline("Please enter your name!");
+        }
+     }
+
+        //ask for hobby again if input is blank
+        string hobby = "";
+        while (string.IsNullOrWhiteSpace(hobby))
+    {
         Console.WriteLine("What is your favorite hobby?");
-        string hobby = Console.ReadLine();
+        hobby = Console.ReadLine();
+        if (string.IsNullOrWhiteSpace(hobby))
+        {
+            Console.Writeline("Please enter a hobby!");
+        }
+     }
 
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~");
 
         Console.WriteLine($"Hello, {name}!");
+        Console.WriteLine();
 
         Console.WriteLine($"It's awesome that you like {hobby}. {hobby} is so diverse!");
-
         Console.WriteLine($"Did you know that {hobby} can be a form of expression?");
 
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~");
     }
 }
+
 
 
 
